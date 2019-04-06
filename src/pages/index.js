@@ -4,17 +4,45 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import 'bootstrap/dist/css/bootstrap.css';
+import { Container, Card,Row, Col, Jumbotron, Button } from 'react-bootstrap';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Container>
+      <Row style={{padding:10}}>
+       <Col>
+        <Card border="dark">
+          <Card.Title className="text-center">Kyle Hughes</Card.Title>
+          <Card.Subtitle className="text-center text-muted">Software Engineer</Card.Subtitle>
+          <hr/>
+          <Card.Text className="text-center">
+          <Container>
+            <Row>
+              <Col>
+                I am currently working as a Software Engineer with Leidos Corporation in Egg Harbor Twp, NJ.
+              </Col>
+            </Row>
+            <Row style={{padding:5}}>
+              <Col>
+              My interests include web development and learning new front technologies. 
+              Currently learning React & Angular in the workplace by taking the initiative to expand our tech stack
+              and re-build internal web applications using each.
+              </Col>
+            </Row>
+            <Row style={{padding:5}}>
+              <Col>
+                  In my free time I am working on a hobby project to expand my knowledge of Angular, Node and Express.
+              </Col>
+            </Row>
+            </Container>
+          </Card.Text>
+        </Card>
+       </Col>
+          
+      </Row>
+    </Container>
   </Layout>
 )
 
