@@ -8,7 +8,7 @@ const StyledLink = styled(Link)`
   color: white;
   padding-right:20px;
   text-align: center;
-  display: inline-block;
+  display: inline-block; 
 `;
 
 const Header = ({ siteTitle }) => (

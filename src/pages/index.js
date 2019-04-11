@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.css';
-import "./projects.css"
+import "./projects.css" 
 import { Container, Card,Row, Col, Jumbotron, Button } from 'react-bootstrap'
 
 const IndexPage = () => (

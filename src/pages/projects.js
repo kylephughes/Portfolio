@@ -7,7 +7,7 @@ import projects from "../data/projects.json";
 import "./projects.css"
 export default class Projects extends React.Component {
  render() {
-   return ( <Layout>
+   return ( <Layout> 
     <SEO title="Projects" />
     <Container>
       <Row>
