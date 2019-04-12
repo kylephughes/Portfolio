@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.css';
+import "font-awesome/css/font-awesome.min.css";
 import "./projects.css" 
 import { Container, Card,Row, Col, Jumbotron, Button } from 'react-bootstrap'
 
