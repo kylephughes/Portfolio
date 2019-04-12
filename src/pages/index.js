@@ -1,20 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.css';
 import "font-awesome/css/font-awesome.min.css";
 import "./projects.css" 
-import { Container, Card,Row, Col, Jumbotron, Button } from 'react-bootstrap'
+import { Container, Card,Row, Col } from 'react-bootstrap'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Container>
-      <Row style={{padding:10}}>
-       <Col>
+      <Row className="justify-content-center" style={{padding:10}}>
+       <Col xs={12} sm={8}>
         <Card border="dark">
           <Card.Title className="text-center">Kyle Hughes</Card.Title>
           <Card.Subtitle className="text-center text-muted">Software Engineer</Card.Subtitle>

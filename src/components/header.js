@@ -22,8 +22,8 @@ const Header = ({ siteTitle }) => (
     <Nav >
       <StyledLink to="/projects">Projects</StyledLink>
     </Nav>
-    <Nav>
-      <StyledLink to="/projects">Tech Thoughts</StyledLink>
+    <Nav >
+      <StyledLink to="/contact">Contact</StyledLink>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
