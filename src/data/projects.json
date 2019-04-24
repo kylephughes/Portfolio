@@ -1,17 +1,22 @@
 [
     {
+        "title": "Administrator Web App",
+        "description" :"Internal web application (Leidos) designed for use by administrators to manage & publish content to relavant users. Allows admins to control access to other systems maintained by our team.",
+        "tech" : "Angular 7, Typescript, Material, Bootstrap 4, Java, Spring Data/Hibernate"
+    },
+    {
+        "title": "Happy Hour Finder",
+        "description" :"Hobby project started to become more fluent in Angular & Node. This project is designed to solve the -- Its 4:30pm, which bars/resturants around me have good specials? ",
+        "tech" : "Angular 7, Typescript, FlexLayout, Material, Node JS, Express JS, MongoDB"
+    },
+    {
          "title" : "Penn State Science Olmypiad Web Application",
-        "description" : "Web application built to handle all tasks related to a Science Olmypiad competition. As part of my masters capstone experience, our team achieved our goal of delivering a high quality system by the end of the semester while at the same time learning new technologies.",
+        "description" : "Web application built to handle all tasks related to a Science Olympiad competition. As part of my masters capstone experience, our team achieved our goal of delivering a high quality system by the end of the semester while at the same time learning new technologies.",
         "tech" : "React, Java, Spring, MongoDB, Bootstrap, Material UI"
     },
     {
         "title": "HLS Protocol Validator",
         "description" : "A program to validate HLS (HTTP Live Streaming) playlists. The program will accept a single URI or may run in batch mode by supplying a list of URI's. The program will generate a report with any errors on the exact line they occurred.",
         "tech" : "Java"
-    },
-    {
-        "title": "Happy Hour Finder (In development)",
-        "description" :"Hobby project started to become more fluent in Angular & Node. This project is designed to solve the -- Its 4:30pm, which bars/resturants around me have good specials? ",
-        "tech" : "Angular 7, Typescript, FlexLayout,Material, Node JS, Express JS, MongoDB"
     }
 ]

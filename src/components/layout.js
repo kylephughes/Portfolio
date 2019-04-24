@@ -25,12 +25,12 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="mainDiv">
+      <div>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="mainDiv" >
+        <div>
           <main className="mainElement">{children}</main>
           <span className="spacer"></span>
-         <Footer/>
+          <Footer/>
         </div>
       
       </div> 

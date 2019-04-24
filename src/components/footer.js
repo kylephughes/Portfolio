@@ -17,9 +17,9 @@ const StyledFooterDiv = styled.div`
 const Footer = () => {
     return (
         <StyledFooterDiv>
-            <Container>
-                <Row className="align-items-center">
-                    <Col >
+            <Container fluid="true">
+                <Row className="justify-content-center align-items-center">
+                    <Col>
                         Built with Gatsby JS, React, Bootstrap
                     </Col>
                     <Col>

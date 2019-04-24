@@ -6,7 +6,7 @@ const Socials = () => {
         <React.Fragment>
             {socialjson.map(social => (
 
-                <a style={{ color: 'white', fontSize: 40, paddingRight: 15 }} href={social.link}>
+                <a key={social.link} style={{ color: 'white', fontSize: 40, paddingRight: 15 }} href={social.link}>
                         <span className={social.icon}></span>
                 </a>
             ))
