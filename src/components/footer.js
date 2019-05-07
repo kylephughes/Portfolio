@@ -10,8 +10,6 @@ const StyledFooterDiv = styled.div`
   height:70px;
   width:100%;
   position:relative;
-  display:flex;
-  flex-shrink : 0;
   background-color:#557A95;
 `;
 const Footer = () => {

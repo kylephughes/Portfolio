@@ -4,9 +4,10 @@
 }
 
 .mainElement {
-  min-height:80vh;
-
+  min-height:81vh
 }
+
+/*
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -629,3 +630,5 @@ pre tt:after {
     font-size: 100%;
   }
 }
+*/
+

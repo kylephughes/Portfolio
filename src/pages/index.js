@@ -4,12 +4,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.css';
 import "font-awesome/css/font-awesome.min.css";
-import "./projects.css" 
 import { Container, Card,Row, Col } from 'react-bootstrap'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`gatsby`, `hughes`, `react`]} />
     <Container>
       <Row className="justify-content-center" style={{padding:10}}>
        <Col xs={12} sm={8}>

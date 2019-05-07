@@ -8,11 +8,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
 import "./layout.css"
 import Footer from "./footer"
 
+const mainDiv = {
+  height:'100vh',
+  position: 'relative'
+};
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -25,14 +28,11 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div>
+      <div style={mainDiv}>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
-          <main className="mainElement">{children}</main>
-          <span className="spacer"></span>
-          <Footer/>
-        </div>
-      
+        <main className="mainElement">{children}</main>
+        <span class="spacer"></span>
+        <Footer/>
       </div> 
     )}
   />

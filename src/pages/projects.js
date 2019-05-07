@@ -5,8 +5,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import projects from "../data/projects.json";
 import "./projects.css"
-export default class Projects extends React.Component {
-  render() {
+import Accomplishments from "../components/accomplishments";
+
+const Projects = () =>{
+
     return (<Layout>
       <SEO title="Projects" />
       <Container fluid>
@@ -20,21 +22,9 @@ export default class Projects extends React.Component {
             <u>A few of my individual accomplishments</u>
         </Col>
         </Row>
-        <Row className="justify-content-center" style={{ paddingTop: 10 }}>
+        <Row className="justify-content-center" style={{ paddingTop: 10, paddingBottom:10 }}>
           <Col xs={12} sm={9}>
-            <ul>
-              <li>Rebuilt a legacy ColdFusion application with Java and the Spring Framework all while
-                  building a responsive UI with Bootstrap & jQuery
-            </li>
-              <li>
-                Built a custom filter & highlight function in vanilla JavaScript and jQuery. The function handled 
-                regular expressions, multiple colors and supported overlapping matches
-              </li>
-              <li>
-                 Developed Java tools used by Air Traffic personnel to automate reporting 
-                 and distribution responsibilities
-              </li>
-            </ul>
+            <Accomplishments/>
           </Col>
         </Row>
         <div>
@@ -62,5 +52,6 @@ export default class Projects extends React.Component {
       </Container>
     </Layout>
     )
-  }
 }
+
+export default Projects;
