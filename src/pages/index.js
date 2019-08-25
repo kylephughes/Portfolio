@@ -21,14 +21,13 @@ const IndexPage = () => (
           <Container>
             <Row>
               <Col>
-                I am currently working as a Software Engineer with Leidos Corporation in Egg Harbor Twp, NJ.
+                I am currently working as a Software Engineer with Disney Streaming Services.
               </Col>
             </Row>
             <Row style={{padding:5}}>
               <Col>
-              My interests include web development and learning new front technologies. 
-              Currently learning React & Angular in the workplace by taking the initiative to expand our tech stack
-              and re-build internal web applications using each.
+              My interests include web development and learning new front technologies. Some technologies I use
+              regularly include React/Redux, Spring Boot and NodeJS.
               </Col>
             </Row>
             <Row style={{padding:5}}>

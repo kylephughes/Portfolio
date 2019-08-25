@@ -1,10 +1,5 @@
 [
     {
-        "title": "Administrator Web App",
-        "description" :"Internal web application (Leidos) designed for use by administrators to manage & publish content to relavant users. Allows admins to control access to other systems maintained by our team.",
-        "tech" : "Angular 7, Typescript, Material, Bootstrap 4, Java, Spring Data/Hibernate"
-    },
-    {
         "title": "Happy Hour Finder",
         "description" :"Hobby project started to become more fluent in Angular & Node. This project is designed to solve the -- Its 4:30pm, which bars/resturants around me have good specials? ",
         "tech" : "Angular 7, Typescript, FlexLayout, Material, Node JS, Express JS, MongoDB"
