@@ -11,11 +11,11 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Footer from "./footer"
-
+import Sidebar from "../components/sidebar"
 const mainDiv = {
-  height:'100vh',
-  position: 'relative'
-};
+  height: "100vh",
+  position: "relative",
+}
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -28,12 +28,10 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div style={mainDiv}>
+      <div>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className="mainElement">{children}</main>
-        <span class="spacer"></span>
-        <Footer/>
-      </div> 
+      </div>
     )}
   />
 )
