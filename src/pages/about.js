@@ -24,10 +24,8 @@ const About = () => (
                   React/Redux, Spring Boot and NodeJS.
               </Row>
               <Row style={{ padding: 5 }}>
-                <Col>
                   In my free time I am working on a hobby project to expand my
                   knowledge of Angular, Node and Express.
-                </Col>
               </Row>
             </Container>
           </div>
