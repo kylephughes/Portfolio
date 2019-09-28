@@ -4,32 +4,55 @@ import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 import "./header.css"
 import styled from "styled-components"
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Hidden,
+  Button,
+  Drawer,
+  IconButton,
+} from "@material-ui/core"
 const StyledLink = styled(Link)`
-  color: gray;
+  
+  color: inherit
   padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
   display: inline-block;
 `
 
-const Header = ({ siteTitle }) => (
-  <Navbar className="navHeader" expand="md">
-    <Navbar.Brand className="navBrand" href="/">
-      {siteTitle}
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav" className="ml-auto">
-      <Nav className="ml-auto">
-        <StyledLink to="/about">About</StyledLink>
-      </Nav>
-      <Nav>
-        <StyledLink to="/blog">Blog</StyledLink>
-      </Nav>
-      <Nav className="mr-auto">
-        <StyledLink to="/projects">Projects</StyledLink>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-)
+const Header = ({ siteTitle }) => {
+  return (
+    <>
+      <AppBar color="default" position="relative">
+        <Toolbar>
+          <Typography color="primary" variant="h5">
+            KH
+          </Typography>
+          <div className="ml-auto mr-auto">
+            <StyledLink to="/about">
+              {" "}
+              <Typography color="primary" variant="h6">
+                About
+              </Typography>
+            </StyledLink>
+            <StyledLink to="/blog">
+              <Typography color="primary" variant="h6">
+                Blog
+              </Typography>
+            </StyledLink>
+            <StyledLink to="/projects">
+              <Typography color="primary" variant="h6">
+                Projects
+              </Typography>
+            </StyledLink>
+          </div>
+        </Toolbar>
+      </AppBar>
+    </>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

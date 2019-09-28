@@ -8,7 +8,6 @@ import Contact from "./contact"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `hughes`, `react`]} />
-    <Contact />
   </Layout>
 )
 

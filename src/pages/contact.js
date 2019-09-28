@@ -1,18 +1,16 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import { Container, Row, Col } from "react-bootstrap"
+import { Typography } from "@material-ui/core"
 import Socials from "../components/socials"
-const Contact = () => (
-  <Container>
-    <Row className="text-center">
-      <Col>Send me some mail : kyle.hughes025@gmail.com</Col>
-    </Row>
-    <Row className="text-center">
-      <Col>
+const Contact = () => {
+  return (
+    <>
+      <Typography align="center" variant="body1">
+        kyle.hughes025@gmail.com <br />
         <Socials />
-      </Col>
-    </Row>
-  </Container>
-)
+      </Typography>
+    </>
+  )
+}
 
 export default Contact

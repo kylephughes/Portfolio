@@ -5,3 +5,7 @@
 .navBrand {
     color:white;
 }
+.styledLinks {
+    align-items:center;
+    justify-content:center
+}
