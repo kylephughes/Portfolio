@@ -1,9 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
 
 import React from "react"
 import PropTypes from "prop-types"
@@ -12,11 +6,11 @@ import Header from "./header"
 import "./layout.css"
 import Footer from "./footer"
 import Sidebar from "../components/sidebar"
-const mainDiv = {
-  height: "100vh",
-  position: "relative",
-}
+import { makeStyles } from '@material-ui/core/styles';
+import {Grid} from "@material-ui/core"
+const dontRender = true
 const Layout = ({ children }) => (
+
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -27,11 +21,21 @@ const Layout = ({ children }) => (
         }
       }
     `}
+    
     render={data => (
-      <div>
+      <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="mainElement">{children}</main>
-      </div>
+        <Grid container>
+        <Grid item xs={12} md={3}>
+          <div style={{ padding: 20 }} >          
+              <Sidebar hideSidebar={true}/>
+              </div>
+            </Grid>
+            <Grid item xs={12} md={8}>
+              {children}
+            </Grid>
+        </Grid>
+        </>
     )}
   />
 )

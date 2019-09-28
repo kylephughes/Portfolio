@@ -6,7 +6,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 import projects from "../data/projects.json";
 import "./projects.css"
 import Accomplishments from "../components/accomplishments";
-
+import {Grid} from "@material-ui/core"
 const Projects = () =>{
 
     return (<Layout>

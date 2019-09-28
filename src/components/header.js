@@ -17,14 +17,14 @@ const Header = ({ siteTitle }) => (
       {siteTitle}
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
+    <Navbar.Collapse id="basic-navbar-nav" className="ml-auto">
       <Nav className="ml-auto">
-        <StyledLink to="/">About</StyledLink>
+        <StyledLink to="/about">About</StyledLink>
       </Nav>
       <Nav>
         <StyledLink to="/blog">Blog</StyledLink>
       </Nav>
-      <Nav>
+      <Nav className="mr-auto">
         <StyledLink to="/projects">Projects</StyledLink>
       </Nav>
     </Navbar.Collapse>

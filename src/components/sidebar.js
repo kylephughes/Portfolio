@@ -1,16 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
- const Sidebar = props => (
-    <div
-      style={{
-        border: "2px solid #e6e6e6",
-        maxWidth: 960,
-        padding: "0.5rem",
-        marginBottom: "25px"
-      }}
-    >
-      <strong>{props.title}.</strong> {props.description}
-    </div>
-  )
+import React from "react"
+import Img from "gatsby-image"
+import "./sidebar.css"
+import getHomeImage from "../utils/homePageImage"
 
-  export default Sidebar
+const Sidebar = React.memo(({hideSidebar}) => {
+
+   const img = getHomeImage()
+   console.log(hideSidebar)
+  return (
+      
+    <>
+    <Img fluid={img.fluid} alt="Brewery" fadeIn={false}/>
+      <strong>
+        Kyle Hughes
+        Full Stack Developer 
+        Montclair, NJ
+      </strong>
+    </>
+  )
+}
+)
+
+ export default Sidebar
