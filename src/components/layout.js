@@ -3,11 +3,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
-import Footer from "./footer"
 import Sidebar from "../components/sidebar"
-import { makeStyles } from "@material-ui/core/styles"
 import { Grid } from "@material-ui/core"
-const dontRender = true
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

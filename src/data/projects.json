@@ -5,7 +5,7 @@
         "tech" : "Angular 7, Typescript, FlexLayout, Material, Node JS, Express JS, MongoDB"
     },
     {
-         "title" : "Penn State Science Olmypiad Web Application",
+         "title" : "Penn State Science Olympiad Web Application",
         "description" : "Web application built to handle all tasks related to a Science Olympiad competition. As part of my masters capstone experience, our team achieved our goal of delivering a high quality system by the end of the semester while at the same time learning new technologies.",
         "tech" : "React, Java, Spring, MongoDB, Bootstrap, Material UI"
     },

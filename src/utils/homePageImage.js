@@ -3,9 +3,9 @@ const getHomeImage = () => {
   const data = useStaticQuery(
     graphql`
     query MyQuery {
-        file(relativePath:{eq:"homePic.jpg"}) {
+        file(relativePath:{eq:"profPic.jpg"}) {
             childImageSharp {
-                fluid(maxWidth: 400, maxHeight: 250) {
+                fluid(maxWidth: 700, maxHeight: 850) {
                     base64
                     
                     ...GatsbyImageSharpFluid
