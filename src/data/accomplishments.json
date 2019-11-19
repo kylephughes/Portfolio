@@ -1,14 +1,3 @@
 [
-    {
-        "place": "leidos",
-        "description": "Rebuilt a legacy ColdFusion application with Java and the Spring Framework all while building a responsive UI with Bootstrap & jQuery"
-    },
-    {
-        "place": "leidos",
-        "description": "  Built a custom filter & highlight function in vanilla JavaScript and jQuery. The function handled regular expressions, multiple colors and supported overlapping matches"
-    },
-    {
-        "place": "leidos",
-        "description": " Developed Java tools used by Air Traffic personnel to automate reporting and data distribution responsibilities"
-    }
+    
 ]

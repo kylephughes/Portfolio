@@ -18,7 +18,7 @@ const Footer = () => {
             <Container fluid="true">
                 <Row className="justify-content-center align-items-center">
                     <Col>
-                        Built with Gatsby JS, React, Bootstrap
+                        Built with Gatsby
                     </Col>
                     <Col>
                         <Socials />
