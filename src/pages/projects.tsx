@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css'
-
-import { Card, CardContent, CardHeader, Divider, Grid, Typography } from '@material-ui/core'
+import { Card, CardContent, Divider, Grid, Typography } from '@material-ui/core'
 
 import Layout from '../components/layout'
 import React from 'react'
@@ -17,7 +15,7 @@ const Projects = () => {
             Projects
           </Typography>
         </Grid>
-        <Grid item xs={12} className="text-center">
+        <Grid container justify="center" item xs={12} style={{ paddingBottom: 12 }}>
           <Typography color="textPrimary">
             Check out some of the projects I have worked on - some with small groups of engineers
             and some individually!

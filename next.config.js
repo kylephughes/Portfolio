@@ -1,3 +1,6 @@
 module.exports = {
-  distDir: 'out',
+  images: {
+    loader: 'imgix',
+    path: '/',
+  },
 }
