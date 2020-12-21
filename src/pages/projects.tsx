@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css'
-
-import { Card, CardContent, CardHeader, Divider, Grid, Typography } from '@material-ui/core'
+import { Card, CardContent, Divider, Grid, Typography } from '@material-ui/core'
 
 import Layout from '../components/layout'
 import React from 'react'
