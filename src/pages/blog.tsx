@@ -1,17 +1,24 @@
-import React from "react"
-import "bootstrap/dist/css/bootstrap.css"
-import { Paper, Typography } from "@material-ui/core"
-import Layout from "../components/layout"
+import 'bootstrap/dist/css/bootstrap.css'
+
+import { Grid, Paper, Typography } from '@material-ui/core'
+
+import Layout from '../components/layout'
+import React from 'react'
+
 const Blog = () => (
   <Layout>
-    <Paper>
-      <Typography variant="h5" component="h3">
-        Eventually will be sharing my experiences
-      </Typography>
-      <Typography component="p">
-        More to follow...
-      </Typography>
-    </Paper>
+    <Grid container justify="center" item xs={12}>
+      <Grid item xs={12}>
+        <Typography align="center" color="textPrimary" variant="h5">
+          Eventually will be sharing my experiences
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography align="center" color="textPrimary">
+          More to follow...
+        </Typography>
+      </Grid>
+    </Grid>
   </Layout>
 )
 

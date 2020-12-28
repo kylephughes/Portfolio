@@ -2,30 +2,47 @@ import { Card, CardContent, Divider, Grid, Typography } from '@material-ui/core'
 
 import Layout from '../components/layout'
 import React from 'react'
-import SEO from '../components/seo'
 import projects from '../data/projects.json'
 
 const Projects = () => {
   return (
     <Layout>
-      <SEO title="Projects" />
-      <Grid container direction="column">
-        <Grid item container justify="center" xs={12}>
+      <Grid container item direction="column" xs={12}>
+        <Grid item container justify="center" xs={12} style={{ paddingBottom: 12 }}>
           <Typography variant="h4" color="textPrimary">
             Projects
           </Typography>
         </Grid>
-        <Grid container justify="center" item xs={12} style={{ paddingBottom: 12 }}>
-          <Typography color="textPrimary">
-            Check out some of the projects I have worked on - some with small groups of engineers
-            and some individually!
-          </Typography>
+        <Grid
+          container
+          direction="column"
+          xs={12}
+          alignItems="center"
+          item
+          style={{ paddingBottom: 12 }}
+        >
+          <Grid container item xs={12} sm={12} md={7} lg={5}>
+            <Typography color="textPrimary">
+              Check out some of the projects I have worked on - some with small groups of engineers
+              and some individually!
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid container direction="column" item xs={12}>
+        <Grid container direction="column" alignItems="center" item xs={12}>
           {projects.map((project, index) => {
             return (
-              <Grid container justify="center" key={index} style={{ paddingBottom: '25px' }}>
-                <Grid item xs={12} sm={9}>
+              <Grid
+                container
+                item
+                xs={12}
+                sm={12}
+                md={7}
+                lg={5}
+                justify="center"
+                key={index}
+                style={{ paddingBottom: 25 }}
+              >
+                <Grid item xs={12}>
                   <Card variant="outlined">
                     <CardContent>
                       <Grid container direction="column">

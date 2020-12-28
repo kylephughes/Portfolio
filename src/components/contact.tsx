@@ -1,7 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import { Typography } from "@material-ui/core"
-import Socials from "../components/socials"
+import Socials from "./socials"
 const Contact = () => {
   return (
     <>
