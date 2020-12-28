@@ -16,7 +16,6 @@ export default function SEO(props: SEOProps) {
       <meta property="og:description" content={config.description} />
       <meta property="og:site_name" content={title} />
       <meta property="twitter:card" content="summary" />
-      {/* <meta property="twitter:creator" content={config.social.twitter} /> */}
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={config.description} />
     </Head>

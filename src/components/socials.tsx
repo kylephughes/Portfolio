@@ -12,11 +12,15 @@ const Socials = () => {
     },
     { icon: <LinkedInIcon />, link: 'https://www.linkedin.com/in/kyle-hughes-b2805b83"' },
   ]
+
+  const navigateTo = (link: string) => {
+    window.open(link)
+  }
   return (
     <Grid container justify="center" item xs={12}>
       {socials.map(social => (
         <Grid item key={social.link}>
-          <IconButton>{social.icon}</IconButton>
+          <IconButton onClick={(e: any) => navigateTo(social.link)}>{social.icon}</IconButton>
         </Grid>
       ))}
     </Grid>

@@ -17,17 +17,14 @@ const Layout = ({ children }) => {
         <Grid item xs={12}>
           <Header siteTitle={config.title} />
         </Grid>
-        <Grid container item xs={12}>
-          <Grid item xs={12} md={3}>
-            <div style={{ padding: 20 }}>
-              <Sidebar />
-            </div>
-          </Grid>
-          <Grid container direction="column" item xs={12} md={8}>
-            <Grid container direction="column" item xs={12} style={{ paddingTop: 20 }}>
-              {children}
-            </Grid>
-          </Grid>
+        <Grid container item xs={12} style={{ padding: 20 }}>
+          {/* <Grid container item xs={12} style={{ padding: 20 }}>
+          <Grid container direction="column" item xs={12} md={3}>
+            <Sidebar />
+          </Grid> */}
+          {/* <Grid container direction="column" item xs={12} md={8} style={{ paddingTop: 20 }}> */}
+          {children}
+          {/* </Grid> */}
         </Grid>
       </Grid>
     </ThemeProvider>
