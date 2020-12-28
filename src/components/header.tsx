@@ -21,7 +21,7 @@ const navLinks = [
     </a>
   </Link>,
 ]
-const Header = () => {
+const Header = ({ siteTitle }) => {
   const [isMobile, setMobile] = useState<boolean>(false)
   const [openDrawer, setOpenDrawer] = useState<boolean>(false)
   useEffect(() => {
