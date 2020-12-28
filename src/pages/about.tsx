@@ -9,7 +9,7 @@ import Sidebar from '../components/sidebar'
 
 const About = () => (
   <Layout>
-    <Grid container alignItems="center" direction="column" item xs={12} md={3}>
+    <Grid container alignItems="center" item xs={12} md={3}>
       <Sidebar />
     </Grid>
     <Grid

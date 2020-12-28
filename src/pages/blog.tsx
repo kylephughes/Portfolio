@@ -7,7 +7,7 @@ import React from 'react'
 
 const Blog = () => (
   <Layout>
-    <Grid container justify="center" item xs={12}>
+    <Grid direction="column" container item>
       <Grid item xs={12}>
         <Typography align="center" color="textPrimary" variant="h5">
           Eventually will be sharing my experiences

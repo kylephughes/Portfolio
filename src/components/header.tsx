@@ -32,6 +32,7 @@ const Header = ({ siteTitle }) => {
     setResponsiveness()
 
     window.addEventListener('resize', () => setResponsiveness())
+    return () => window.removeEventListener('resize', () => setResponsiveness())
   }, [])
   const handleDrawerClose = (e: any) => {
     setOpenDrawer(false)
