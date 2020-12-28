@@ -8,12 +8,12 @@ import React from 'react'
 const Blog = () => (
   <Layout>
     <Grid direction="column" container item>
-      <Grid item xs={12}>
+      <Grid item>
         <Typography align="center" color="textPrimary" variant="h5">
           Eventually will be sharing my experiences
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item>
         <Typography align="center" color="textPrimary">
           More to follow...
         </Typography>
