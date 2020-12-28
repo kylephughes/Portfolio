@@ -11,7 +11,7 @@ const Sidebar = React.memo(() => {
         <Image src="/profPic.jpg" alt="Picture of the author" width={400} height={500} />
       </Grid>
       <Grid container wrap="nowrap" direction="column" item xs={8} md={12}>
-        <Grid container direction="column" item xs={12}>
+        <Grid container wrap="nowrap" direction="column" item xs={12}>
           <Typography color="textPrimary" align="center">
             Kyle Hughes
           </Typography>
@@ -26,6 +26,7 @@ const Sidebar = React.memo(() => {
             container
             style={{ paddingTop: 8 }}
             direction="column"
+            wrap="nowrap"
             justify="center"
             item
             xs={12}
@@ -35,7 +36,7 @@ const Sidebar = React.memo(() => {
                 kyle.hughes025@gmail.com
               </Typography>
             </Grid>
-            <Grid item xs={12}>
+            <Grid container wrap="nowrap" item xs={12}>
               <Socials />
             </Grid>
           </Grid>
