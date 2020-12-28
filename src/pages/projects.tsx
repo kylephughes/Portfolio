@@ -7,7 +7,7 @@ import projects from '../data/projects.json'
 const Projects = () => {
   return (
     <Layout>
-      <Grid container item direction="column" xs={12}>
+      <Grid wrap="nowrap" container item direction="column" xs={12}>
         <Grid item container justify="center" xs={12} style={{ paddingBottom: 12 }}>
           <Typography variant="h4" color="textPrimary">
             Projects

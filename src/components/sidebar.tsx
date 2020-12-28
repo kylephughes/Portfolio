@@ -6,11 +6,11 @@ import Socials from './socials'
 
 const Sidebar = React.memo(() => {
   return (
-    <Grid container alignItems="center" direction="column" item xs={12}>
-      <Grid item xs={12}>
+    <Grid wrap="nowrap" container alignItems="center" direction="column" item>
+      <Grid item>
         <Image src="/profPic.jpg" alt="Picture of the author" width={400} height={500} />
       </Grid>
-      <Grid container direction="column" item xs={8} md={12}>
+      <Grid container wrap="nowrap" direction="column" item xs={8} md={12}>
         <Grid container direction="column" item xs={12}>
           <Typography color="textPrimary" align="center">
             Kyle Hughes
