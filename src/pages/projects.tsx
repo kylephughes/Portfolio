@@ -28,7 +28,7 @@ const Projects = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container direction="column" alignItems="center" item xs={12}>
+        <Grid container wrap="nowrap" direction="column" alignItems="center" item xs={12}>
           {projects.map((project, index) => {
             return (
               <Grid

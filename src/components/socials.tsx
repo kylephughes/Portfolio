@@ -17,7 +17,7 @@ const Socials = () => {
     window.open(link)
   }
   return (
-    <Grid container justify="center" item xs={12}>
+    <Grid wrap="nowrap" container justify="center" item xs={12}>
       {socials.map(social => (
         <Grid item key={social.link}>
           <IconButton onClick={(e: any) => navigateTo(social.link)}>{social.icon}</IconButton>
