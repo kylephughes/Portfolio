@@ -1,23 +1,22 @@
-import { Grid, ThemeProvider, createMuiTheme } from '@material-ui/core'
+import { Grid, ThemeProvider, createMuiTheme, createTheme } from '@mui/material'
 
 import Header from './header'
 import React from 'react'
-import Sidebar from './sidebar'
 import config from '../config'
 
-const darkTheme = createMuiTheme({
+const darkTheme = createTheme({
   palette: {
-    type: 'dark',
+    mode: 'dark',
   },
 })
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={darkTheme}>
-      <Grid container direction="column">
+      <Grid container>
         <Grid item xs={12}>
           <Header siteTitle={config.title} />
         </Grid>
-        <Grid container item xs={12} style={{ padding: 20 }}>
+        <Grid className="container" container item style={{ padding: 20 }}>
           {children}
         </Grid>
       </Grid>

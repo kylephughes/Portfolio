@@ -1,6 +1,6 @@
-import About from './about'
+import Home from './home'
 import React from 'react'
 
-const IndexPage = () => <About />
+const IndexPage = () => <Home />
 
 export default IndexPage

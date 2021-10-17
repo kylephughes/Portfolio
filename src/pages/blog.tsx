@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css'
-
-import { Grid, Paper, Typography } from '@material-ui/core'
+import { Grid, Paper, Typography } from '@mui/material'
 
 import Layout from '../components/layout'
 import React from 'react'

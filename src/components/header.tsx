@@ -1,13 +1,13 @@
-import { AppBar, Drawer, Grid, IconButton, Toolbar, Typography } from '@material-ui/core'
+import { AppBar, Drawer, Grid, IconButton, Toolbar, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 
 import Link from 'next/link'
-import MenuIcon from '@material-ui/icons/Menu'
+import MenuIcon from '@mui/icons-material/Menu'
 
 const navLinks = [
-  <Link href="/about">
+  <Link href="/home">
     <a className="styledAnchor">
-      <Typography color="textPrimary">About</Typography>
+      <Typography color="textPrimary">Home</Typography>
     </a>
   </Link>,
   <Link href="/blog">
@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => {
   }
   return (
     <>
-      <AppBar color="default" position="relative">
+      <AppBar color="default" position="sticky">
         <Toolbar>
           <Grid container>
             <Grid item xs={1}>
@@ -65,7 +65,7 @@ const Header = ({ siteTitle }) => {
                   container
                   direction="column"
                   wrap="nowrap"
-                  justify="center"
+                  justifyContent="center"
                   alignItems="center"
                   item
                   style={{ width: 250, paddingTop: 50 }}
@@ -74,7 +74,7 @@ const Header = ({ siteTitle }) => {
                     <Grid
                       container
                       alignContent="center"
-                      justify="center"
+                      justifyContent="center"
                       key={index}
                       item
                       xs={12}
@@ -87,7 +87,7 @@ const Header = ({ siteTitle }) => {
               </Drawer>
             </Grid>
             {!isMobile ? (
-              <Grid container alignContent="center" item xs={11} justify="center">
+              <Grid container alignContent="center" item xs={11} justifyContent="center">
                 {navLinks.map((link, index) => (
                   <Grid item key={index} xs={1}>
                     {link}

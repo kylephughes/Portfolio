@@ -1,7 +1,7 @@
-import React from "react"
-import "bootstrap/dist/css/bootstrap.css"
-import { Typography } from "@material-ui/core"
-import Socials from "./socials"
+import React from 'react'
+import Socials from './socials'
+import { Typography } from '@mui/material'
+
 const Contact = () => {
   return (
     <>

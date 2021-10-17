@@ -1,4 +1,4 @@
-import { Divider, Grid, Paper, Typography } from '@material-ui/core'
+import { Divider, Grid, Typography } from '@mui/material'
 
 import Image from 'next/image'
 import React from 'react'
@@ -8,7 +8,7 @@ const Sidebar = React.memo(() => {
   return (
     <Grid container alignItems="center" direction="column" item>
       <Grid item>
-        <Image src="/profPic.jpg" alt="profile" width={400} height={500} />
+        <Image src="/profpic.png" alt="profile" width={400} height={500} />
       </Grid>
       <Grid container direction="column" item xs={8} md={12}>
         <Grid container direction="column" item>
@@ -16,17 +16,17 @@ const Sidebar = React.memo(() => {
             Kyle Hughes
           </Typography>
           <Typography color="textPrimary" align="center">
-            Full Stack Engineer
+            Software Engineer
           </Typography>
           <Typography color="textPrimary" align="center">
-            Montclair, NJ
+            Westwood, NJ
           </Typography>
           <Divider />
           <Grid
             container
             style={{ paddingTop: 8 }}
             direction="column"
-            justify="center"
+            justifyContent="center"
             item
             xs={12}
           >
