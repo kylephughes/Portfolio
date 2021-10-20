@@ -44,9 +44,8 @@ const Home = () => (
             />
           </ListItem>
         </List>
-      </Grid>
-      <Grid item xs={12} md={9}>
-        <Typography color="textPrimary" variant="h4" component="h4" align="center">
+        <Divider />
+        <Typography pt={4} color="textPrimary" variant="h4" component="h4" align="center">
           Hobbies
         </Typography>
         <List>
