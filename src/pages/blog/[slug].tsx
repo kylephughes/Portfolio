@@ -1,5 +1,6 @@
 import { Grid, Typography } from '@mui/material'
 
+import Image from 'next/image'
 import Layout from 'components/layout'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -18,7 +19,21 @@ const CodeBlock: React.FC<Props> = ({ children }) => {
     </SyntaxHighlighter>
   )
 }
-const CustomParagraph = ({ children }) => <pre className={styles.code}>{children}</pre>
+const CustomParagraph = ({ children, ...paragraph }) => {
+  const { node } = paragraph
+
+  // format the images in the markdown file
+  if (node.children[0].tagName === 'img') {
+    const image = node.children[0]
+    return (
+      <p>
+        <Image src={image.properties.src} width="1000" height="300" alt={image.properties.alt} />
+      </p>
+    )
+  } else {
+    return <p>{children}</p>
+  }
+}
 
 export default function BlogTemplate({ content, data }) {
   // Render data from `getStaticProps`
@@ -31,6 +46,7 @@ export default function BlogTemplate({ content, data }) {
               components={{
                 // pre: props => <CustomParagraph {...props} />,
                 code: props => <CodeBlock {...props} />,
+                p: paragraph => <CustomParagraph {...paragraph} />,
               }}
             >
               {content}
