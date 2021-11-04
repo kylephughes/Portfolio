@@ -6,11 +6,11 @@ import Sidebar from '../components/sidebar'
 
 const Home = () => (
   <Layout>
-    <Grid container alignItems="center" item xs={12} md={3}>
+    <Grid container alignItems="start" item xs={12} md={3}>
       <Sidebar />
     </Grid>
-    <Grid container justifyContent="center" item xs={12} md={8}>
-      <Grid item xs={12} md={9}>
+    <Grid container alignItems="center" justifyContent="center" item xs={12} md={9}>
+      <Grid item xs={12}>
         <Typography color="textPrimary" variant="h4" component="h4" align="center">
           Experience
         </Typography>
@@ -44,8 +44,12 @@ const Home = () => (
             />
           </ListItem>
         </List>
+      </Grid>
+      <Grid item xs={12} md={9}>
         <Divider />
-        <Typography pt={4} color="textPrimary" variant="h4" component="h4" align="center">
+      </Grid>
+      <Grid item xs={12}>
+        <Typography color="textPrimary" variant="h4" component="h4" align="center">
           Hobbies
         </Typography>
         <List>
