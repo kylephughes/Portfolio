@@ -1,9 +1,12 @@
-import { Card, CardContent, Divider, Grid, Typography } from '@mui/material'
+import { Button, Card, CardActions, CardContent, Grid, Typography } from '@mui/material'
 
 import Layout from '../components/layout'
 import React from 'react'
-import projects from '../data/projects.json'
+import { projects } from 'data'
 
+const handleBtnClick = (link: string) => {
+  window.open(link)
+}
 const Projects = () => {
   return (
     <Layout>
@@ -19,37 +22,24 @@ const Projects = () => {
             and some individually!
           </Typography>
         </Grid>
-        <Grid
-          container
-          item
-          xs={12}
-          sm={12}
-          md={7}
-          lg={5}
-          alignItems="center"
-          justifyContent="center"
-        >
+        <Grid container direction="column" item alignItems="center">
           {projects.map((project, index) => {
             return (
-              <Grid item justifyContent="center" key={index} style={{ paddingBottom: 25 }}>
-                <Card variant="outlined" raised>
+              <Grid item key={index} style={{ paddingBottom: 25 }}>
+                <Card sx={{ maxWidth: 800 }}>
                   <CardContent>
-                    <Grid container>
-                      <Grid item xs={12}>
-                        <Typography variant="h6" color="textPrimary">
-                          {project.title}
-                        </Typography>
-                      </Grid>
-                      <Divider />
-                      <Grid item xs={12} style={{ paddingBottom: 12, paddingTop: 12 }}>
-                        <Typography color="textPrimary">{project.description}</Typography>
-                      </Grid>
-                      <Divider />
-                      <Grid item xs={12} style={{ paddingTop: 12 }}>
-                        <Typography color="textPrimary">Built With : {project.tech}</Typography>
-                      </Grid>
-                    </Grid>
+                    <Typography variant="h6" gutterBottom color="textPrimary">
+                      {project.title}
+                    </Typography>
+                    <Typography gutterBottom color="textSecondary">
+                      {project.description}
+                    </Typography>
+
+                    <Typography color="textSecondary">Built With: {project.tech}</Typography>
                   </CardContent>
+                  <CardActions style={{ paddingLeft: 8 }}>
+                    <Button onClick={e => handleBtnClick(project.link)}>View repo</Button>
+                  </CardActions>
                 </Card>
               </Grid>
             )

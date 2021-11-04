@@ -10,9 +10,7 @@ import matter from 'gray-matter'
 import path from 'path'
 import styles from './Markdown.module.css'
 
-type Props = {}
-
-const CodeBlock: React.FC<Props> = ({ children }) => {
+const CodeBlock = ({ children }) => {
   return (
     <SyntaxHighlighter style={darcula} className={styles.code} language={'jsx'}>
       {children}
