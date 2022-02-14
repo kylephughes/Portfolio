@@ -8,7 +8,7 @@ const Socials = () => {
   const socials: Array<any> = [
     {
       icon: <GitHubIcon />,
-      link: 'https://github.com/hughes72',
+      link: 'https://github.com/kylephughes',
     },
     { icon: <LinkedInIcon />, link: 'https://www.linkedin.com/in/kyle-hughes-b2805b83' },
   ]
