@@ -1,8 +1,8 @@
-import { Divider, Grid, Typography } from '@mui/material'
+import { Divider, Grid, Typography } from "@mui/material"
 
-import Image from 'next/image'
-import React from 'react'
-import Socials from './socials'
+import Image from "next/image"
+import React from "react"
+import Socials from "./socials"
 
 const Sidebar = React.memo(() => {
   return (
@@ -21,7 +21,7 @@ const Sidebar = React.memo(() => {
           <Typography color="textPrimary" align="center">
             Westwood, NJ
           </Typography>
-          <Divider />
+          <Divider style={{ margin: "12px 0px" }} />
           <Grid
             container
             style={{ paddingTop: 8 }}

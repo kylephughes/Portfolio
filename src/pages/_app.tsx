@@ -1,6 +1,13 @@
-import '../../public/styles.css'
+import Head from "next/head"
+import "../../public/styles.css"
 
-// This default export is required in a new `pages/_app.tsx` file.
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <title>Kyle Hughes</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
