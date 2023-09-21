@@ -50,7 +50,7 @@ const Home = () => (
               }
               secondary={
                 <Typography color="textSecondary" align="center">
-                  2021 - Present
+                  2022 - Present
                 </Typography>
               }
             />
@@ -69,7 +69,7 @@ const Home = () => (
               }
               secondary={
                 <Typography color="textSecondary" align="center">
-                  2019 - 2021
+                  2019 - 2022
                 </Typography>
               }
             />
