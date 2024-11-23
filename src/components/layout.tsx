@@ -1,26 +1,21 @@
-import { Grid, ThemeProvider, createMuiTheme, createTheme } from '@mui/material'
+"use client"
+import { Flex } from "@chakra-ui/react"
+import React from "react"
+import Sidebar from "./sidebar"
 
-import Header from './header'
-import React from 'react'
-import config from '../config'
-
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-})
 const Layout = ({ children }) => {
   return (
-    <ThemeProvider theme={darkTheme}>
-      <Grid container>
-        <Grid item xs={12}>
-          <Header siteTitle={config.title} />
-        </Grid>
-        <Grid className="container" container item style={{ padding: 20 }}>
-          {children}
-        </Grid>
-      </Grid>
-    </ThemeProvider>
+    <Flex>
+      <Sidebar />
+      <Flex
+        padding={["6", "12"]}
+        marginLeft={[0, "200px"]}
+        width={["100%", "calc(100% - 200px)"]}
+        marginTop="50px"
+      >
+        {children}
+      </Flex>
+    </Flex>
   )
 }
 

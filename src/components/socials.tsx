@@ -1,28 +1,35 @@
-import { Grid, IconButton } from '@mui/material'
+import { Flex, IconButton } from "@chakra-ui/react"
 
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import React from 'react'
+import { FaLinkedin, FaGithub } from "react-icons/fa"
+import React from "react"
 
 const Socials = () => {
-  const socials: Array<any> = [
+  const socials = [
     {
-      icon: <GitHubIcon />,
-      link: 'https://github.com/kylephughes',
+      icon: <FaGithub />,
+      link: "https://github.com/kylephughes",
     },
-    { icon: <LinkedInIcon />, link: 'https://www.linkedin.com/in/kyle-hughes-b2805b83' },
+    {
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/kyle-hughes-b2805b83",
+    },
   ]
   const navigateTo = (link: string) => {
     window.open(link)
   }
   return (
-    <Grid wrap="nowrap" container justifyContent="center" item xs={12}>
+    <Flex gap={2}>
       {socials.map(social => (
-        <Grid item key={social.link}>
-          <IconButton onClick={(e: any) => navigateTo(social.link)}>{social.icon}</IconButton>
-        </Grid>
+        <IconButton
+          key={social.link}
+          variant="ghost"
+          onClick={_ => navigateTo(social.link)}
+          rounded="full"
+        >
+          {social.icon}
+        </IconButton>
       ))}
-    </Grid>
+    </Flex>
   )
 }
 

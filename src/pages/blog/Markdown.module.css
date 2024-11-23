@@ -1,8 +1,0 @@
-.code {
-  overflow-x: auto;
-}
-/* only let the code blocks scroll */
-.markdown {
-  overflow: hidden;
-  word-break: break-word;
-}

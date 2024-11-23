@@ -1,48 +1,35 @@
-import { Divider, Grid, Typography } from "@mui/material"
+import NextLink from "next/link"
+import { Flex, List, ListItem } from "@chakra-ui/react"
 
-import Image from "next/image"
-import React from "react"
-import Socials from "./socials"
-
-const Sidebar = React.memo(() => {
+const Sidebar = () => {
   return (
-    <Grid container alignItems="center" direction="column" item>
-      <Grid item>
-        <Image src="/profpic.png" alt="profile" width={400} height={500} />
-      </Grid>
-      <Grid container direction="column" item xs={8} md={12}>
-        <Grid container direction="column" item>
-          <Typography color="textPrimary" align="center">
-            Kyle Hughes
-          </Typography>
-          <Typography color="textPrimary" align="center">
-            Software Engineer
-          </Typography>
-          <Typography color="textPrimary" align="center">
-            Westwood, NJ
-          </Typography>
-          <Divider style={{ margin: "12px 0px" }} />
-          <Grid
-            container
-            style={{ paddingTop: 8 }}
-            direction="column"
-            justifyContent="center"
-            item
-            xs={12}
-          >
-            <Grid item xs={12}>
-              <Typography color="textPrimary" align="center">
-                kyle.hughes025@gmail.com
-              </Typography>
-            </Grid>
-            <Grid container wrap="nowrap" item xs={12}>
-              <Socials />
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
-    </Grid>
+    <Flex
+      backgroundColor="black"
+      display={["none", "flex"]}
+      height="100vh"
+      width="200px"
+      position="fixed"
+    >
+      <List.Root
+        color="white"
+        fontSize="large"
+        lineHeight={2.5}
+        listStyleType="none"
+        padding="8"
+        width="100%"
+      >
+        <ListItem borderBottom="1px solid" borderColor="gray.700">
+          <NextLink href="/">Home</NextLink>
+        </ListItem>
+        <ListItem borderBottom="1px solid" borderColor="gray.700">
+          <NextLink href="/blog">Blog</NextLink>
+        </ListItem>
+        <ListItem borderBottom="1px solid" borderColor="gray.700">
+          <NextLink href="/projects">Projects</NextLink>
+        </ListItem>
+      </List.Root>
+    </Flex>
   )
-})
+}
 
 export default Sidebar

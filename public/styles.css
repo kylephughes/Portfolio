@@ -1,9 +1,0 @@
-html body {
-  background-color: #212121;
-  margin: 0;
-}
-
-body .styledAnchor,
-body .styledAnchor:hover {
-  text-decoration: none;
-}
