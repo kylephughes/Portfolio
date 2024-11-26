@@ -28,7 +28,7 @@ const Header = () => {
             <Box
               key={nav.href}
               p={2}
-              fontSize="md"
+              fontSize="lg"
               fontWeight={500}
               textDecoration={pathname === nav.href ? "underline" : "none"}
               textUnderlineOffset={"2px"}
