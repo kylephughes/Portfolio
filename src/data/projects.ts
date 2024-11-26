@@ -8,7 +8,7 @@ export const projects: Array<Project> = [
   {
     title: 'COVID-19 Global Hackathon: Discount Mappers',
     description:
-      'Developed a progressive web application to track discounts being offered to first responders along with my team at DSS. The app was integrated with Google Maps to accurately display discounts based on the devices current location https://github.com/discountmappers',
+      'Developed a progressive web application to track discounts being offered to first responders along with my team at DSS. The app was integrated with Google Maps to accurately display discounts based on the devices current location',
     tech: "React/Typescript, Material, Google API's, AWS Dynamo/Lambda/API Gateway",
     link: 'https://github.com/discountmappers',
   },

@@ -1,15 +1,13 @@
-import React from 'react'
-import Socials from './socials'
-import { Typography } from '@mui/material'
+import React from "react"
+import Socials from "./socials"
+import { Text } from "@chakra-ui/react"
 
 const Contact = () => {
   return (
-    <>
-      <Typography align="center" variant="body1">
-        kyle.hughes025@gmail.com <br />
-        <Socials />
-      </Typography>
-    </>
+    <div>
+      kyle.hughes025@gmail.com <br />
+      <Socials />
+    </div>
   )
 }
 
