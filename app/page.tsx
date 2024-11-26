@@ -3,7 +3,6 @@
 import React from "react"
 import { Flex, Heading, Text } from "@chakra-ui/react"
 import Contact from "../src/components/contact"
-import { Metadata } from "next"
 
 const Home = () => (
   <Flex flexDirection="column">
@@ -20,15 +19,17 @@ const Home = () => (
       <Contact />
 
       <Text marginTop="8" width={["100%", "70%"]}>
-        I'm a software engineer with a passion for building out new product's
-        and diving into new tech. I have had experience building and scaling
-        production ready services at Disney in support of the initial Disney+
-        launch. I also have extensive experience in frontend development - from
-        building full stack internal tools from scratch to building and
-        supporting new customer facing features. Today you can find me at Gemini
-        building out new product experiences on the web and mobile platforms.
-        Love building and learning anything new with React and now React Native
-        &#128512; so please reach out if you want to jam on something!
+        I'm a software engineer with a passion for building out new products and
+        diving into new tech. I have extensive experience in frontend
+        development - from building full stack internal tools from scratch to
+        building and supporting new customer facing features. I also have had
+        experience building and scaling production ready services to support the
+        initial Disney+ streaming service launch. Today you can find me at
+        Gemini leading new product experience development on the web and mobile
+        platforms. Love building and learning anything new with React and now
+        React Native &#128512; reach out if you want to pair on something! In my
+        spare time you can catch me playing golf, working out and being a dad
+        &#128526;
       </Text>
     </Flex>
     <Flex flexDirection="column" marginTop={4}>
