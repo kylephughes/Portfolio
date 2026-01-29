@@ -14,22 +14,23 @@ const Home = () => (
     >
       <Heading size="4xl">Kyle Hughes</Heading>
       <Heading marginTop="2" size="lg">
-        Staff Software Engineer - Westwood, NJ
+        Principal Software Engineer - Westwood, NJ
       </Heading>
       <Contact />
 
       <Text marginTop="8" width={["100%", "70%"]}>
-        I'm a software engineer with a passion for building out new products and
-        diving into new tech. I have extensive experience in frontend
-        development - from building full stack internal tools from scratch to
-        building and supporting new customer facing features. I also have had
-        experience building and scaling production ready services to support the
-        initial Disney+ streaming service launch. Today you can find me at
-        Gemini leading new product experience development on the web and mobile
-        platforms. Love building and learning anything new with React and now
-        React Native &#128512; reach out if you want to pair on something! In my
-        spare time you can catch me playing golf, working out and being a dad
-        &#128526;
+        I'm a distinguished software engineer with a passion for building out
+        new products and diving into new tech. I have extensive experience in
+        frontend development - from building full stack internal tools from
+        scratch to building and supporting new customer facing features. I also
+        have had experience building and scaling production ready services to
+        support the initial Disney+ streaming service launch. Today you can find
+        me at Gemini leading web and mobile development for the growth
+        organization where we continue to iterate on new products such as the
+        new Gemini business card and optimize onboarding funnels. Love building
+        and learning anything new with React and React Native &#128512; reach
+        out if you want to pair on something! In my spare time you can catch me
+        playing golf, working out and being a dad &#128526;
       </Text>
     </Flex>
     <Flex flexDirection="column" marginTop={4}>
@@ -38,7 +39,7 @@ const Home = () => (
       </Heading>
       <Flex flexDirection="column">
         <Heading fontWeight="normal">
-          Staff Software Engineer, Frontend - Gemini
+          Principal Software Engineer, Frontend - Gemini
         </Heading>
         <Text fontWeight="light" marginBottom="8px">
           2022 - Present
