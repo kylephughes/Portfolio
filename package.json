@@ -6,7 +6,7 @@
     "@chakra-ui/react": "^3.2.1",
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.3.0",
-    "@netlify/plugin-nextjs": "5.8.1",
+    "@netlify/plugin-nextjs": "5.15.7",
     "glob": "^7.2.0",
     "gray-matter": "^4.0.3",
     "next": "16.0.7",
